@@ -10,7 +10,7 @@ Airport.prototype = {
     var counter = 0;
 
     var thisFest = festivals.results[0];
-
+    //recursive ajax request to get list of airports. Turning the asynchronous code language into a synchronous language.
     var recursiveAjax = function(thisFest){
       
       var url = "http://localhost:3000/airports/"+thisFest.venue.latitude+"/"+thisFest.venue.longitude;
