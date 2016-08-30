@@ -3,6 +3,9 @@ var Airport = function() {
   this.onUpdate = null;
 };
 
+// prototype:
+// get airports from api
+
 Airport.prototype = {
 
   getAirports: function(festivals) {
