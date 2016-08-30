@@ -5,7 +5,7 @@ addMarker: function(center){
   })
 }
 
-
+ //future task: select nearest airport  from geolocation
 showFestivals: function(festivals){
   navigator.geolocation.getCurrentPosition(function(position){
     this.center = { lat: position.coords.latitude, lng: position.coords.longitude }

@@ -16,6 +16,8 @@ Flight.prototype = {
     inboundDate.setDate(inboundDate.getDate() +5)
     inboundDate = this.formatDate(inboundDate);
 
+    // recurivse ajax to change asynchronous to synchronous. Consider refactoring to promises.
+
     var recursiveAjax = function(thisAirport){
       var url = "http://partners.api.skyscanner.net/apiservices/browsedates/v1.0/GB/GBP/en-GB/"+this.depAirport+"/"+ thisAirport.code + "/" + outboundDate + "/"+ inboundDate +"?apiKey=fl366429978355658452366133652739";
       var request = new XMLHttpRequest();
